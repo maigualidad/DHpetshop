@@ -5,70 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet shop</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49a24fe9d0.js" crossorigin="anonymous"></script>
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <p>Grandes ofertas en comederos <span>Español</span> <span>ARG$<img src="IMG/down.png"></span></p>            
+        <div class="ofertas">
+            <h6 class="ofertasf">Grandes ofertas en comederos</h6> 
+            <ul type="none" class="ofertasff">
+                <li>Español <i class="fas fa-chevron-down"></i></li>
+                <li>ARG$ <i class="fas fa-chevron-down"></i></li>       
         </div>
 
-        <nav style="background-color: orange; padding: 0%;">
-            <div><img src="IMG/Logo.png" Alt="Logo" height="23px"></div>
-            <div><p><img src="IMG/pawprint 2.png">Categorias <img src="IMG/pawprint 2.png">Pets <img src="IMG/pawprint 2.png">Nosotros <img src="IMG/pawprint 2.png">Contactenos</p></div>
+        <nav>
+            <div>
+                <img src="IMG/Logo.png" Alt="Logo" class="logo">
+            </div>
+            <div>
+                <ul type="none" class="menu">
+                    <li><i class="fas fa-paw"></i> Categorias </li>
+                    <li><i class="fas fa-paw"></i> Pets</li>
+                    <li><i class="fas fa-paw"></i> Nosotros</li>
+                    <li><i class="fas fa-paw"></i> Contactenos</p></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
     <main>
-        <section>
-            <img src="IMG/Background.png" alt="fondo comedero para animales">
-            <h2 style="font-size: 30px;">¡Es un placer tenerte aquí!</h2>
-            <h4 style="font-size: 16px;">¡Comederos en descuento!</p>
-            <p style="font-size: 16px;">COMEDEROS</p>
+        <section class="heroe">
+                <div class="prueba">
+                    <h2 class="placer">¡Es un placer tenerte aquí!</h2>
+                    <h4>¡Comederos en descuento!</h4>
+                    <p class="comederos">COMEDEROS</p>
+                </div>
         </section>
         
-        <section align="center">
-            <article>
+        <section>
+            <article class="destacados">
                 <img src="IMG/pawprint 1.png" alt="huella de perro">
                 <h2>Productos destacados</h2>
                 <p>Comederos - Accesorios - Comidas</p>
             </article>
 
-            <article>
-                <div><img src="IMG/churrasquito.png"><p>Churrasquito</p><p>$ 150</p></div>
-                <div><img src="IMG/comedero.png"><p>Comedero para perro</p><p>$ 250</p></div>
-                <div><img src="IMG/Huesito.png"><p>Juguete huesito</p><p>$ 650</p></div>       
+            <article class="productos">
+                <div><img src="IMG/churrasquito.png"><p class="produ">Churrasquito</p><p class="precio">$ 150</p></div>
+                <div><img src="IMG/comedero.png"><p class="produ">Comedero para perro</p><p class="precio">$ 250</p></div>
+                <div><img src="IMG/Huesito.png"><p class="produ">Juguete huesito</p><p class="precio">$ 650</p></div>       
             </article>
         </section>
                 
-        <section align="center">
-            <h3>Contactenos</h3>
-                <form>
-                    <input type="text" name="nombrecompleto" placeholder="Nombre y apellido">
-                    <input type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico">
-                    <input type="tel" name="telefono" placeholder="Telefono">
-                    <input type="button" value="Resetear">
-                    <input type="button" value="Enviar">
+        <section class="contacto">
+            <h3>Contáctanos</h3>
+                <form class="contactoform">
+                    <input class="barraform" type="text" name="nombrecompleto" placeholder="Nombre y apellido">
+                    <input class="barraform" type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico">
+                    <input class="barraform" type="tel" name="telefono" placeholder="Telefono">
+                    <div class="botones">
+                        <input class="botonreset" type="button" value="Resetear">
+                        <input class="botonenviar" type="button" value="Enviar">
+                    </div>
                 </form>
         </section>
     </main>
 
     <footer>
-        <div style="background-color: orange; padding: 0%;">
-            <img src="IMG/enviar-correo 1.png"> <P>Suscríbete para más novedades</P>
+        <div class="suscripcion">
+            <div class="pruebados">
+                <img src="IMG/enviar-correo 1.png"> 
+                <p class="suscribete">Suscríbete para más novedades</P>
+            </div>
             <form>
-                <input type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico">
-                <input type="button" value="Suscribirme">
+                <input type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico" class="correo">
+                <input type="button" value="Suscribirme" class="boton">
             </form>
         </div>
-        <div>
-            <ul type="none">
-                <li><img src="IMG/Icono (2).png"><p>Localidad</p><p>Calle-Provincia</p></li>
+
+        <div class="datoscontacto">
+            <div class="datoscontactodos">
+                <dl>
+                <dt><p><img src="IMG/Icono (2).png">Localidad</p></dt>
+                    <dd><p>Calle-Provincia</p></dd>
+                </dl>
                 <li><img src="IMG/Icono.png"><p>Telefono</p><p>Número de telefono</p></li>
                 <li><img src="IMG/Icono (1).png"><p>Correo electrónico</p><p>Dirección de correo</p></li>
-            </ul>
+            </div>
+            <div>
+            <img src="IMG/Logo2.png" alt="logo">
         </div>
-        <div>
-            <p align="center">Todos los derechos reservados Front End</p>
+        </div>
+        
+    <div class="derechos">
+            <p>Todos los derechos reservados Front End</p>
         </div>
     </footer>
 </body>

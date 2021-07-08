@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,14 @@
 
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="ofertas">
-            <h6 class="ofertasf">Grandes ofertas en comederos</h6> 
+            <h6 class="ofertasf">Grandes ofertas en comederos</h6>
             <ul type="none" class="ofertasff">
                 <li>Español <i class="fas fa-chevron-down"></i></li>
-                <li>ARG$ <i class="fas fa-chevron-down"></i></li>       
+                <li>ARG$ <i class="fas fa-chevron-down"></i></li>
         </div>
 
         <nav>
@@ -33,57 +35,87 @@
                     <li><a href=""><i class="fas fa-paw"></i> Contactenos</a></li>
                 </ul>
             </div>
+
+            <div class="iniciar3">
+                <ul class="nav">
+                    <li><i class="fas fa-bars"></i>
+                        <ul>
+                            <li class="menu2"><a href=""></i> Categorias </a></li>
+                            <li class="menu2"><a href=""></i> Pets</a></li>
+                            <li class="menu2"><a href=""></i> Nosotros</a></li>
+                            <li class="menu2"><a href=""></i> Contactenos</a></li>
+                        </ul>
+                </ul>
+
+        </nav>
+
         </nav>
 
     </header>
     <main>
         <section class="heroe">
-                <div class="prueba">
-                    <h2 class="placer">¡Es un placer tenerte aquí!</h2>
-                    <h4>¡Comederos en descuento!</h4>
-                    <p class="comederos">COMEDEROS</p>
-                </div>
+            <div class="prueba">
+                <h2 class="placer">¡Es un placer tenerte aquí!</h2>
+                <h4>¡Comederos en descuento!</h4>
+                <p class="comederos">COMEDEROS</p>
+            </div>
         </section>
-        
-        <section>
+
+        <section class="secpadre">
             <article class="destacados">
                 <img src="IMG/pawprint 1.png" alt="huella de perro">
                 <h2>Productos destacados</h2>
                 <ul type="none">
-                    <a href=""><li>Comederos</li></a>
-                    <a href=""><li> - Accesorios</li></a>
-                    <a href=""><li> - Comidas</li></a>
+                    <a href="">
+                        <li>Comederos</li>
+                    </a>
+                    <a href="">
+                        <li> - Accesorios</li>
+                    </a>
+                    <a href="">
+                        <li> - Comidas</li>
+                    </a>
                 </ul>
             </article>
 
             <article class="productos">
-                <div><img src="IMG/churrasquito.png"><p class="produ">Churrasquito</p><p class="precio">$ 150</p></div>
-                <div><img src="IMG/comedero.png"><p class="produ">Comedero para perro</p><p class="precio">$ 250</p></div>
-                <div><img src="IMG/Huesito.png"><p class="produ">Juguete huesito</p><p class="precio">$ 650</p></div>       
+                <div class="card"><img src="IMG/churrasquito.png">
+                    <p class="produ">Churrasquito</p>
+                    <p class="precio">$ 150</p>
+                </div>
+                <div class="card"><img src="IMG/comedero.png">
+                    <p class="produ">Comedero para perro</p>
+                    <p class="precio">$ 250</p>
+                </div>
+                <div class="card"><img src="IMG/Huesito.png">
+                    <p class="produ">Juguete huesito</p>
+                    <p class="precio">$ 650</p>
+                </div>
             </article>
         </section>
-                
+
         <section class="contacto">
             <h3>Contáctanos</h3>
-                <form class="contactoform">
-                    <input class="barraform" type="text" name="nombrecompleto" placeholder="Nombre y apellido">
-                    <input class="barraform" type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico">
-                    <input class="barraform" type="tel" name="telefono" placeholder="Telefono">
-                    <div class="botones">
-                        <input class="botonreset" type="button" value="Resetear">
-                        <input class="botonenviar" type="button" value="Enviar">
-                    </div>
-                </form>
+            <form action="#" method="POST" class="contactoform">
+                <input class="barraform" type="text" name="nombrecompleto" placeholder="Nombre y apellido">
+                <input class="barraform" type="email" name="CorreoElectronico"
+                    placeholder="Ingresá tu correo electrónico">
+                <input class="barraform" type="tel" name="telefono" placeholder="Telefono">
+                <div class="botones">
+                    <input type="reset" value="Resetear" class="resetear">
+                    <input class="botonenviar" type="button" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 
     <footer>
         <div class="suscripcion">
             <div class="pruebados">
-                <img src="IMG/enviar-correo 1.png"> 
+                <img src="IMG/enviar-correo 1.png">
                 <p class="suscribete">Suscríbete para más novedades</P>
             </div>
-            <form>
+            <form action="#" method="POST">
                 <input type="email" name="CorreoElectronico" placeholder="Ingresá tu correo electrónico" class="correo">
                 <input type="button" value="Suscribirme" class="boton">
             </form>
@@ -91,38 +123,39 @@
 
         <div class="datoscontacto">
             <div class="datoscontactodos">
-                    <div class="contact">
+                <div class="contact">
                     <img src="IMG/Icono (2).png">
                     <dl>
                         <dt>Localidad</dt>
                         <dd>Calle-Provincia</dd>
                     </dl>
-                    </div>
-                    <div class="contact">
+                </div>
+                <div class="contact">
                     <img src="IMG/Icono.png">
                     <dl>
                         <dt>Telefono</dt>
                         <dd>Número de telefono</dd>
                     </dl>
-                    </div>
+                </div>
 
-                    <div class="contact">                
-                        <img src="IMG/Icono (1).png">
-                           <dl>
-                            <dt>Correo electrónico</dt>
-                            <dd>Dirección de correo</dd>
-                        </dl>
-                    </div>
+                <div class="contact">
+                    <img src="IMG/Icono (1).png">
+                    <dl>
+                        <dt>Correo electrónico</dt>
+                        <dd>Dirección de correo</dd>
+                    </dl>
+                </div>
             </div>
-            
+
             <div>
-            <img src="IMG/Logo2.png" alt="logo">
+                <img src="IMG/Logo2.png" alt="logo">
             </div>
         </div>
-        
-    <div class="derechos">
+
+        <div class="derechos">
             <p>Todos los derechos reservados Front End</p>
         </div>
     </footer>
 </body>
+
 </html>

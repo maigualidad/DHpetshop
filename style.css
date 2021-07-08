@@ -2,6 +2,9 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    /*outline: 1px solid red;*/
+    box-sizing: border-box;
+    
 }
 
 body
@@ -61,6 +64,67 @@ nav {
     margin: 15px;
 }
 
+.iniciar3 {
+    display: none;
+}
+
+
+
+/* Menu desplegable*/
+
+.nav {
+    margin-right: 5px;
+    z-index: 100;
+
+}
+
+ul, ol {
+    list-style:none;
+}
+
+     
+.nav li a:hover {
+    background-color: none;
+
+     
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    right: 0.1%;
+
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+
+
+.menu2 {
+
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    margin-right: 10px;
+    letter-spacing: 0.10em;
+    background-color: black;
+
+}
+
+.menu2:hover {
+
+    background-color: white;
+    color: #222;
+    
+
+}
+
+
 /* MAIN */
 
 .heroe {
@@ -110,7 +174,7 @@ h4 {
     background-color: #F0A83E;
     padding: 10px;
     border-radius: 5px;
-    width: 30%;
+    /*width: 30%;*/
     text-align: center;
     color: #FFF;
 
@@ -162,6 +226,7 @@ p {
 
 .productos { 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
@@ -216,7 +281,7 @@ h3 {
     margin: 2%;
 }
 
-.botonreset {
+input[type=reset] {
     border-radius: 15px;
     font-size: 9px;
     background-color: #8A8787;
@@ -251,9 +316,10 @@ h3 {
 .suscripcion { 
     background-color: #F0A83E;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    /*height: 10vh;*/
     padding: 5px;
 }
 
@@ -292,6 +358,7 @@ h3 {
     background-color: #3C2313;
     color: #FFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -327,4 +394,35 @@ dl {
 .contact {
     display: flex;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .ofertas{
+        display: none; 
+    }
+
+    .iniciar3 {
+        display: block;
+    }
+
+   
+}
+@media (max-width: 460px) {
+    .menu {
+        display: none;
+    }
+
+    .ofertas{
+        display: none; 
+    }
+
+
+
+    .datoscontacto {
+        flex-direction: column-reverse;
+    }
 }

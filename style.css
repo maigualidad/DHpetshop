@@ -420,7 +420,10 @@ dl {
         display: block;
     }
 
-   
+   .imgcard {
+       height: 200px;
+   }
+
 }
 @media (max-width: 460px) {
     .menu {
